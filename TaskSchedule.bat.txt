@@ -1,0 +1,8 @@
+:: Author	: Steve Grody 2018-05
+:: Purpose	: This batch file is called via the windows task scheduler every minute (when enabled)
+::          	  In turn, it calls the Laravel schedule process to handle task processing
+:: Maint	:
+
+CD C:\xampp\htdocs\laravelapps\l1
+
+PHP Artisan schedule:run 1>> NUL 2>&1
