@@ -20,8 +20,6 @@ class CreateTaskTable extends Migration
             $table->integer('shipid');
             $table->string('description');
             $table->string('status');
-            $table->date('submitted');
-            $table->date('statuschanged');
             $table->string('notes');
             $table->rememberToken();
             $table->timestamps();
